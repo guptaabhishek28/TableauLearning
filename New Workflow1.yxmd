@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Wide.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Case Code" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Client" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2015-10-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2015-11-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2015-12-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-01-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-02-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-03-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-04-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-05-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-06-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-07-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-08-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-09-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-10-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-11-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="2016-12-01" size="255" source="File: C:\Users\42162\Desktop\Tableau\Wide.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="318" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Case Code" />
+            <Field field="Client" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Case Code" selected="False" />
+            <Field field="Client" selected="False" />
+            <Field field="2015-10-01" selected="True" />
+            <Field field="2015-11-01" selected="True" />
+            <Field field="2015-12-01" selected="True" />
+            <Field field="2016-01-01" selected="True" />
+            <Field field="2016-02-01" selected="True" />
+            <Field field="2016-03-01" selected="True" />
+            <Field field="2016-04-01" selected="True" />
+            <Field field="2016-05-01" selected="True" />
+            <Field field="2016-06-01" selected="True" />
+            <Field field="2016-07-01" selected="True" />
+            <Field field="2016-08-01" selected="True" />
+            <Field field="2016-09-01" selected="True" />
+            <Field field="2016-10-01" selected="True" />
+            <Field field="2016-11-01" selected="True" />
+            <Field field="2016-12-01" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="462" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\42162\Desktop\Tableau\Output.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\42162\AppData\Local\Temp\Engine_11448_77570967be044787bae2241d21944ac0_\Engine_19632_0861e0211dd141b6b6871e076f4ace47_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
